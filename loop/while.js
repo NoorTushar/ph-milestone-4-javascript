@@ -6,3 +6,5 @@ while (num <= 10) {
    console.log(sum, `at num: ${num}`);
    num++;
 }
+
+console.log(sum); // 55
