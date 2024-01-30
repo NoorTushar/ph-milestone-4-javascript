@@ -35,3 +35,15 @@ for (i = 0; i < purchaseHistory.length; i++) {
 }
 
 console.log(`discounted`, discountedPrice);
+
+// using map
+
+const discountList2 = purchaseHistory.map((currentElement) => {
+   if (currentElement >= 200) {
+      return currentElement - currentElement * 0.1;
+   } else {
+      return currentElement;
+   }
+});
+
+console.log(discountList2);
