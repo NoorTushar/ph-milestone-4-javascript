@@ -10,11 +10,21 @@
  * Case 2: 1600 - leap year
  * Case 3: 1700 - not leap year
  * Case 4: 1800 - not leap year
- * Case 4: 1900 - not leap year
+ * Case 5: 1900 - not leap year
  **/
 
-let year = 2000;
+function isLeapYear(year) {
+   if (year % 100 !== 0 && year % 4 === 0) {
+      return true;
+   } else if (year % 400 === 0) {
+      return true;
+   } else {
+      return false;
+   }
+}
 
-function isLeapYear(year) {}
-
-console.log(isLeapYear(year));
+console.log(isLeapYear(2000));
+console.log(isLeapYear(1600));
+console.log(isLeapYear(1700));
+console.log(isLeapYear(1800));
+console.log(isLeapYear(1900));
