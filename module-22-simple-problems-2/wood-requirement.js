@@ -1,4 +1,5 @@
 /**
+ * Find out the total wood needed for an order.
  * wood needed for:
  * 1 chair = 3 cft
  * 1 table = 10 cft
